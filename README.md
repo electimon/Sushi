@@ -22,7 +22,7 @@
 
 ## About Sushi:
 
-Sushi is the compliment to my other project ["EGTR"](https://github.com/M4cs/EGTR-Futurestore). It is a program that offers a GUI and ease of use along with extra features to TSSChecker. It works on all **Windows and MacOS** platforms. Once a Linux binary has been compiled I will release it for that as well. I named this Sushi because SHSH looks kind of like Sushi so fuck it.
+Sushi is the compliment to my other project ["EGTR"](https://github.com/M4cs/EGTR-Futurestore). It is a program that offers a GUI and ease of use along with extra features to TSSChecker. It works on all platforms. Once a Linux binary has been compiled I will release it for that as well. I named this Sushi because SHSH looks kind of like Sushi so fuck it.
 
 ## Usage:
 
@@ -44,7 +44,7 @@ There are a few requirements you need in order to get Sushi working perfectly. I
 - Python 3+
 - Pip for Python3
 
-### Installation:
+### Installation for Windows:
 
 Once you have these programs installed run the following commands:
 
@@ -55,9 +55,17 @@ pip3 install -r requirements.txt
 python3 sushi.py
 ```
 
-If you're on linux you will need to compile the dependencies.
-After that run these commands for installation:
+**IF YOU ARE IN macOS:**
 
+Enter the same commands for Windows but don't run sushi.py yet after you have entered these commands:
+```
+cd download
+chmod 744 tsschecker
+```
+**NOTE**:Change 744 to 770 if you want all users to use it instead of only the current user 
+
+### Installation for Linux:
+You will need to compile the dependencies. After that run these commands for installation:
 ```
 apt-get install libusb-1.0-0 libcurl3-gnutls
 git clone https://github.com/electimon/Sushi.git Sushi
